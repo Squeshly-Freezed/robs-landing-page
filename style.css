@@ -1,17 +1,17 @@
+@import url('fonts.googleapis.com');
+
 *, *::before, *::after  {
     box-sizing: border-box;
     border: 1px solid;
 }
 
 body {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     height: 100vh;
-    /* padding: 15px; */
-    margin: 0;
+    margin: 0px;
 }
 
 header {
-    height: 30vh;
     background-color: #1F2937;
     color: white;
 }
@@ -19,6 +19,7 @@ header {
 .bar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
@@ -26,53 +27,86 @@ header {
     color: #f9faf8;
 }
 
+.bar ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0px;
+    gap: 15px;
+}
+
 .bar li {
     font-size: 18px;
     color: #E5E7EB;
 }
 
+.feature {
+    display: flex;
+    align-items: center;
+}
+
+.feature img {
+    height: 200px;
+}
+
+.hero-main {
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
+}
+
+.hero-secondary {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
 .content1 {
-    height: 25vh;
     text-align: center;
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* padding: 50px; */
+        /* flex-wrap: wrap; */
 }
 
 .info-header {
     font-size: 36px;
     color: #1F2937;
-    /* font-weight: 900; */
+    padding: 50px;
 }
 
 .content1 ul {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+    flex-wrap: wrap;
     margin: 0px 150px;
-    padding: 30px;
+    padding: 0px;
     gap: 30px;
-    flex: 1;
 }
 
 .content1 li {
     list-style-type: none;
     padding: 0px;
+    flex: 0 1 0;
+    font-size: 14px;
+    color:#1F2937
 }
 
 .content1 img {
     height: 150px;
+    width: 150px;
+    border: 2px solid #3882F6;
+    border-radius: 8px;
 }
 
 .content2 {
-    height: 25vh;
     flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 200px;
+    padding: 50px 300px;
     background-color: #E5E7EB;
+    flex-wrap: wrap;
 }
 
 .quote {
@@ -80,32 +114,37 @@ header {
     font-style: italic;
     color: #1F2937;
     font-weight: 300px;
+    align-self: flex-end;
+    /* padding: 50px 300px; */
+    /* margin: 0px 150px; */
+    /* flex: 1 1 auto; */
 }
 
 .name {
     font-size: 18px;
     font-weight: 600;
-    padding: 0px 100px;
+    padding: 0px 20px;
     align-self: flex-end;
 }
 
 .content3 {
-    height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 50px;
+    flex-wrap: wrap;
 }
 
 .blue-box {
     display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
+    /* flex: 1; */
+    justify-content: space-between;
+    gap: 20px;
     background-color: #3882F6;
-    padding: 30px 80px;
+    padding: 30px 150px;
     border-radius: 6px;
     margin: 0px 150px;
+    flex-wrap: wrap;
 }
 
 .cta1 {
@@ -116,7 +155,7 @@ header {
 
 .cta2 {
     color: white;
-    /* font-size: 12px; */
+    font-size: 14px;
 }
 
 
@@ -130,4 +169,13 @@ footer {
     background-color: #1F2937;
     color: white;
     font-size: 14px;
+}
+
+button {
+    background-color: #3882F6;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid white;
+    padding: 4px 25px;
+    font-weight: 600;
 }
